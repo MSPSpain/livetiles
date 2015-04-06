@@ -81,4 +81,11 @@
         <source-file src="src/wp/LiveTiles.cs" />
     </platform>
     
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/LiveTilesProxy.js" name="LiveTilesProxy">
+            <runs />
+        </js-module>
+    </platform>
+
 </plugin>
