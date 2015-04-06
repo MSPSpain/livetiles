@@ -10,7 +10,7 @@ Windows.UI.Notifications.TileUpdateManager.createTileUpdaterForApplication().ena
 module.exports = {
 	updateAppTile: function(win, lose, options) {
 		var notifications = Windows.UI.Notifications;
-
+		var options = options[0];
 		// https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.notifications.tiletemplatetype.aspx
 		var template = notifications.TileTemplateType.tileWideImageAndText01;
 	    var tileXml = notifications.TileUpdateManager.getTemplateContent(template);
